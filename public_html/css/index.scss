@@ -638,7 +638,7 @@ a {
                 position: absolute;
                 top: 30%;
                 text-align: center;
-                font-size: 6vw;
+                font-size: 7vw;
             }
         }
 
@@ -662,7 +662,7 @@ a {
             #projects-container {
                 display: block;
                 position: absolute;
-                top: 38%;
+                top: 40%;
                 left: auto;
                 right: auto;
                 height: 42vh;
@@ -742,12 +742,12 @@ a {
         #contact-section {
             #contact-body {
                 text-align: center;
-                @include newBodyText(4vw, 90vw);
+                @include newBodyText(4.7vw, 90vw);
                 @include emphasis();
-                top: 40%;
+                top: 35%;
                 .note {
                     @include note(center);
-                    font-size: 3.35vw;
+                    font-size: 3.7vw;
                     margin-left: -1vw;
                 }
                 #socials-btn-row {
@@ -764,7 +764,7 @@ a {
                         border-style: solid;
                         border-width: 1.5vw;
                         border-color: yellow;
-                        padding: 2vw;
+                        padding: 1.3vh;
                         background-color: transparent;
                         img {
                             display: block;
@@ -780,16 +780,16 @@ a {
                 float: left;
                 position: relative;
                 left: 7.5vw;
-                top: 20%;
+                top: 17%;
                 left: 50%;
-                transform: translateY(-20%) translateX(-50%);
+                transform: translateY(-17%) translateX(-50%);
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 width: 60vw;
                 div {
-                    width: 4vw;
-                    height: 4vw;
+                    width: 4.3vw;
+                    height: 4.3vw;
                     margin: 1vw;
                     border: 0.04vw solid rgb(232, 232, 3);
                     background-color: rgb(237, 237, 0);

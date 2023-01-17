@@ -689,7 +689,7 @@ a .down-arrow:after {
     position: absolute;
     top: 30%;
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
   }
   body #projects-section {
     display: flex;
@@ -724,7 +724,7 @@ a .down-arrow:after {
   body #projects-section #projects-container {
     display: block;
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: auto;
     right: auto;
     height: 42vh;
@@ -797,12 +797,12 @@ a .down-arrow:after {
   }
   body #contact-section #contact-body {
     text-align: center;
-    font-size: 4vw;
+    font-size: 4.7vw;
     color: white;
     font-weight: 400;
     padding: 2.5vw;
     width: 90vw;
-    top: 40%;
+    top: 35%;
   }
   body #contact-section #contact-body .emphasis {
     display: inline;
@@ -816,7 +816,7 @@ a .down-arrow:after {
     font-size: 3vw;
     padding: 1.4vw;
     margin-left: -1vw;
-    font-size: 3.35vw;
+    font-size: 3.7vw;
     margin-left: -1vw;
   }
   body #contact-section #contact-body #socials-btn-row {
@@ -834,7 +834,7 @@ a .down-arrow:after {
     border-style: solid;
     border-width: 1.5vw;
     border-color: yellow;
-    padding: 2vw;
+    padding: 1.3vh;
     background-color: transparent;
   }
   body #contact-section #contact-body #socials-btn-row .socials-btn img {
@@ -848,17 +848,17 @@ a .down-arrow:after {
     float: left;
     position: relative;
     left: 7.5vw;
-    top: 20%;
+    top: 17%;
     left: 50%;
-    transform: translateY(-20%) translateX(-50%);
+    transform: translateY(-17%) translateX(-50%);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 60vw;
   }
   body #contact-section .stagger-visualizer div {
-    width: 4vw;
-    height: 4vw;
+    width: 4.3vw;
+    height: 4.3vw;
     margin: 1vw;
     border: 0.04vw solid rgb(232, 232, 3);
     background-color: rgb(237, 237, 0);
