@@ -89,7 +89,7 @@ a {
     .down-arrow {
         position: absolute;
         top: 85vh;
-        left: calc(50% - 14px);
+        left: 50%;
         width: 0;
         height: 30px;
         border: 2px solid;
@@ -495,6 +495,7 @@ a {
     }
 }
 
+/** For Mobile Devices**/
 @media screen and (max-width: 480px) {
     @mixin newBodyText($fontSize, $width) {
         font-size: $fontSize;
@@ -506,7 +507,7 @@ a {
     @mixin emphasis() {
         .emphasis {
             display: inline;
-            font-size: 5vw;
+            font-size: 7vw;
             font-weight: 500;
         }
     }
@@ -521,6 +522,25 @@ a {
     }
 
     body {
+        a {
+            /*Arrow link in the intro section*/
+            .down-arrow {
+                top: 75vh;
+            }
+
+            @keyframes jumpInfinite {
+                0% {
+                    margin-top: 0;
+                }
+                50% {
+                    margin-top: 20px;
+                }
+                100% {
+                    margin-top: 0;
+                }
+            }
+        }
+
         #intro-sect {
             display: flex;
             flex-direction: column;
@@ -530,11 +550,13 @@ a {
                 transform: translateY(-30%);
             }
             .intro-line#salut {
-                font-size: 5vw;
+                position: relative;
+                font-size: 7vw;
+                margin-top: 6vw;
             }
             .skill-summary {
                 &#one-liner {
-                    font-size: 6vw;
+                    font-size: 7vw;
                 }
 
                 &#second-liner {
@@ -543,9 +565,10 @@ a {
             }
 
             svg.intro-line {
-                width: 80vw;
-                height: 15.5vh;
-                margin-top: 3vh;
+                width: 90vw;
+                height: 18.5vh;
+                margin-top: 1vh;
+                margin-left: 6vw;
             }
 
             @keyframes bounce {
@@ -565,10 +588,10 @@ a {
             #education-body {
                 display: block;
                 position: absolute;
-                top: 73%;
+                top: 70%;
                 left: 3vw;
 
-                @include newBodyText(3.6vw, 90vw);
+                @include newBodyText(4vw, 90vw);
                 @include emphasis();
                 .note {
                     @include note(left);
@@ -578,7 +601,7 @@ a {
             img#profile-pic {
                 position: absolute;
                 left: 10vw;
-                top: 35%;
+                top: 30%;
                 height: 40vh;
                 width: auto;
                 transition: box-shadow 0.2s ease-in, width 0.3s ease-in-out;
@@ -602,9 +625,9 @@ a {
             #skill-body {
                 display: block;
                 position: absolute;
-                top: 73%;
+                top: 67%;
                 left: 3vw;
-                @include newBodyText(3.8vw, 90vw);
+                @include newBodyText(4vw, 90vw);
                 @include emphasis();
                 .note {
                     @include note(left);
@@ -613,7 +636,7 @@ a {
             .skill-sphere {
                 display: block;
                 position: absolute;
-                top: 35%;
+                top: 30%;
                 text-align: center;
                 font-size: 6vw;
             }
@@ -627,10 +650,10 @@ a {
             #projects-body {
                 display: block;
                 position: absolute;
-                top: 27%;
+                top: 24%;
                 left: 3vw;
                 @include emphasis();
-                @include newBodyText(3.8vw, 90vw);
+                @include newBodyText(4vw, 90vw);
             }
             .note {
                 @include note(left);
@@ -639,7 +662,7 @@ a {
             #projects-container {
                 display: block;
                 position: absolute;
-                top: 42%;
+                top: 38%;
                 left: auto;
                 right: auto;
                 height: 42vh;
@@ -657,21 +680,6 @@ a {
                     font-size: 3.5vw;
                     font-weight: 750;
                     transition: all 0.2s ease-in-out;
-                }
-                .project-media {
-                    transition: opacity 0.2s linear;
-                }
-                &:nth-of-type(1) {
-                    top: 0;
-                    left: 0;
-                }
-                &:nth-of-type(2) {
-                    top: 0;
-                    left: 50%;
-                }
-                &:nth-of-type(3) {
-                    top: 50%;
-                    left: 0;
                 }
                 &:nth-of-type(4) {
                     top: 50%;
@@ -750,11 +758,11 @@ a {
                     }
                     .socials-btn {
                         display: inline;
-                        width: 10vw;
-                        height: 10vw;
-                        border-radius: 10vw;
+                        width: 13vw;
+                        height: 13vw;
+                        border-radius: 13vw;
                         border-style: solid;
-                        border-width: 1vw;
+                        border-width: 1.5vw;
                         border-color: yellow;
                         padding: 2vw;
                         background-color: transparent;
@@ -763,9 +771,6 @@ a {
                             position: relative;
                             height: 85%;
                             width: 85%;
-                            top: 50%;
-                            left: 50%;
-                            transform: translateX(-50%) translateY(-50%);
                         }
                     }
                 }

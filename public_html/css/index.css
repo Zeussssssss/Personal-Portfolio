@@ -61,7 +61,7 @@ a {
 a .down-arrow {
   position: absolute;
   top: 85vh;
-  left: calc(50% - 14px);
+  left: 50%;
   width: 0;
   height: 30px;
   border: 2px solid;
@@ -465,6 +465,7 @@ a .down-arrow:after {
   width: fit-content;
 }
 
+/*Contact Section Styling */
 #contact-section #contact-body {
   position: relative;
   top: 50%;
@@ -542,7 +543,36 @@ a .down-arrow:after {
   background-color: rgb(237, 237, 0);
 }
 
+/** For Mobile Devices**/
 @media screen and (max-width: 480px) {
+  body a {
+    /*Arrow link in the intro section*/
+  }
+  body a .down-arrow {
+    top: 75vh;
+  }
+  @-webkit-keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
   body #intro-sect {
     display: flex;
     flex-direction: column;
@@ -553,18 +583,21 @@ a .down-arrow:after {
     transform: translateY(-30%);
   }
   body #intro-sect .intro-line#salut {
-    font-size: 5vw;
+    position: relative;
+    font-size: 7vw;
+    margin-top: 6vw;
   }
   body #intro-sect .skill-summary#one-liner {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   body #intro-sect .skill-summary#second-liner {
     font-size: 3vw;
   }
   body #intro-sect svg.intro-line {
-    width: 80vw;
-    height: 15.5vh;
-    margin-top: 3vh;
+    width: 90vw;
+    height: 18.5vh;
+    margin-top: 1vh;
+    margin-left: 6vw;
   }
   @-webkit-keyframes bounce {
     from {
@@ -588,9 +621,9 @@ a .down-arrow:after {
   body #education-summary #education-body {
     display: block;
     position: absolute;
-    top: 73%;
+    top: 70%;
     left: 3vw;
-    font-size: 3.6vw;
+    font-size: 4vw;
     color: white;
     font-weight: 400;
     padding: 2.5vw;
@@ -598,7 +631,7 @@ a .down-arrow:after {
   }
   body #education-summary #education-body .emphasis {
     display: inline;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 500;
   }
   body #education-summary #education-body .note {
@@ -612,7 +645,7 @@ a .down-arrow:after {
   body #education-summary img#profile-pic {
     position: absolute;
     left: 10vw;
-    top: 35%;
+    top: 30%;
     height: 40vh;
     width: auto;
     transition: box-shadow 0.2s ease-in, width 0.3s ease-in-out;
@@ -630,9 +663,9 @@ a .down-arrow:after {
   body #skill-section #skill-body {
     display: block;
     position: absolute;
-    top: 73%;
+    top: 67%;
     left: 3vw;
-    font-size: 3.8vw;
+    font-size: 4vw;
     color: white;
     font-weight: 400;
     padding: 2.5vw;
@@ -640,7 +673,7 @@ a .down-arrow:after {
   }
   body #skill-section #skill-body .emphasis {
     display: inline;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 500;
   }
   body #skill-section #skill-body .note {
@@ -654,7 +687,7 @@ a .down-arrow:after {
   body #skill-section .skill-sphere {
     display: block;
     position: absolute;
-    top: 35%;
+    top: 30%;
     text-align: center;
     font-size: 6vw;
   }
@@ -667,9 +700,9 @@ a .down-arrow:after {
   body #projects-section #projects-body {
     display: block;
     position: absolute;
-    top: 27%;
+    top: 24%;
     left: 3vw;
-    font-size: 3.8vw;
+    font-size: 4vw;
     color: white;
     font-weight: 400;
     padding: 2.5vw;
@@ -677,7 +710,7 @@ a .down-arrow:after {
   }
   body #projects-section #projects-body .emphasis {
     display: inline;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 500;
   }
   body #projects-section .note {
@@ -691,7 +724,7 @@ a .down-arrow:after {
   body #projects-section #projects-container {
     display: block;
     position: absolute;
-    top: 42%;
+    top: 38%;
     left: auto;
     right: auto;
     height: 42vh;
@@ -709,21 +742,6 @@ a .down-arrow:after {
     font-size: 3.5vw;
     font-weight: 750;
     transition: all 0.2s ease-in-out;
-  }
-  body #projects-section .project-card .project-media {
-    transition: opacity 0.2s linear;
-  }
-  body #projects-section .project-card:nth-of-type(1) {
-    top: 0;
-    left: 0;
-  }
-  body #projects-section .project-card:nth-of-type(2) {
-    top: 0;
-    left: 50%;
-  }
-  body #projects-section .project-card:nth-of-type(3) {
-    top: 50%;
-    left: 0;
   }
   body #projects-section .project-card:nth-of-type(4) {
     top: 50%;
@@ -788,7 +806,7 @@ a .down-arrow:after {
   }
   body #contact-section #contact-body .emphasis {
     display: inline;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 500;
   }
   body #contact-section #contact-body .note {
@@ -810,11 +828,11 @@ a .down-arrow:after {
   }
   body #contact-section #contact-body #socials-btn-row .socials-btn {
     display: inline;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 10vw;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 13vw;
     border-style: solid;
-    border-width: 1vw;
+    border-width: 1.5vw;
     border-color: yellow;
     padding: 2vw;
     background-color: transparent;
@@ -824,9 +842,6 @@ a .down-arrow:after {
     position: relative;
     height: 85%;
     width: 85%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
   }
   body #contact-section .stagger-visualizer {
     display: flex;
